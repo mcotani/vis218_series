@@ -1,10 +1,4 @@
 
-nav-right {
-    float: right;
-    vertical-align: top;
-    width: 25%;
-  }
-
   @font-face {
     font-family: 'wildcardregular';
     src: url('fonts/wildcard/wildcard-lyrq-webfont.woff2') format('woff2'),
@@ -67,19 +61,6 @@ h3{
     width: 50%;
 }
 
-.side-block{
-  width: 70%;
-  float: left;
-}
-
-
-.border1{
-    border: white;
-    border-width: 2px;
-    /* border-top-width: 10px; */
-    border-style: solid;
-    margin: 2%;
-}
 
 .column{
   display: inline-block;
@@ -134,30 +115,6 @@ side-header{
     margin-left: 10px
 }
 
-navigator{
-    border: 2px;
-    border-color: black;
-    position: fixed;
-    top: 10px;
-    right: 10px; 
-    padding: 10px;
-    border-radius: 10px;
-    border-style:solid;
-    background-color: white;
-}
-
-navigator a{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'wildcardregular';
-    text-decoration: none;
-    color: black;
-}
-
-navigator a:hover {
-    background-color: black;
-    color: white;
-  }
 
 footer a{
     font-family: 'wildcardregular';
@@ -276,26 +233,6 @@ footer a{
 @import "compass/css3/transform";
 
 
-.modal {
-  position: absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width: 100%;
-}
-
-.modal {
-  z-index:101;
-  background-color: #030;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.modal.active {
-  	opacity: 1;
-  	visibility: visible;
-}
-
 .imgLeft{
   clear: right;
   float: left;
@@ -324,3 +261,6 @@ footer a{
 .scrollmenu .current{
   background-color: deeppink;
   }
+
+
+  

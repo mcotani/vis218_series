@@ -42,12 +42,12 @@ function loop() {
   }
 
   // Helper function from: http://stackoverflow.com/a/7557433/274826
-function isElementInViewport(el) {
+function isElementInViewport(el1) {
     // special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-      el = el[0];
+    if (typeof jQuery === "function" && el1 instanceof jQuery) {
+      el1 = el1[0];
     }
-    var rect = el.getBoundingClientRect();
+    var rect = el1.getBoundingClientRect();
     return (
       (rect.top <= 0
         && rect.bottom >= 0)
@@ -59,3 +59,6 @@ function isElementInViewport(el) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     );
   }
+
+
+  
