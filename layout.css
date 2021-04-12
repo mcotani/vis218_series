@@ -263,4 +263,12 @@ footer a{
   }
 
 
-  
+
+
+  #div1 {
+    /* position: absolute; */
+    z-index: 1;
+    background-image:url(images/home_vogue/feifei_avatar.png);
+    width:100px;
+    height:30px;
+    }
