@@ -27,15 +27,15 @@ nav-left {
   padding: 10px;  
 }
 h6{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:monospace;
     font-style: normal;
     font-weight: 100;
     font-size: medium;
-    line-height: 25%;
+    /* line-height: 25%; */
 }
 
-h3,h4,h5{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h4,h5{
+    font-family:monospace;
     font-style: normal;
     font-weight: 100;
     font-size: x-large;
@@ -52,7 +52,8 @@ font-size: 30px;
 
 h3{
     font-family: 'wildcard_3dregular';
-    font-size: 90px; 
+    font-size: 7.5vw; 
+    text-align: center;
 }
 
 .tiktok-embed{
@@ -131,6 +132,72 @@ footer a{
     width: 80vw;
     margin: auto;
     border-width: 2px;
+}
+.writing-container2{
+  width: 100%;
+  margin: 0%;
+  border: 0px;
+}
+
+.ipad-main-container{
+  width: 90vw;
+  height: 50vw;
+    z-index: 1;
+    display: block;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.ipad-container{
+  width: 65%;
+  height: 50vw;
+  margin-top: 15vw;
+    border-width: 2px;
+    z-index: 1;
+    display: block;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 10%;
+    right: 0;
+    text-align: center;
+    align-items: center;
+    overflow: auto;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.ipad-column{
+  display: inline-block;
+  max-width: 60%;
+  white-space: normal;
+  padding: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: top;
+  
+  left: 0;
+  right: 0;
+  
+}
+
+.ipad-img{
+  margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  align-items: center;
+  /* display: block; */
+  z-index: -3;
+  max-width: 100vw;
+  margin-top: -100px;
+  position:absolute
 }
 
 .scrollblock{
@@ -257,6 +324,20 @@ footer a{
 .show-on-scroll{
 
 }
+.button {
+  background-color: deeppink; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+.button:hover{
+  background-color: lawngreen; /* Green */
+  color: white
+}
 
 .scrollmenu .current{
   background-color: deeppink;
@@ -271,4 +352,163 @@ footer a{
     background-image:url(images/home_vogue/feifei_avatar.png);
     width:100px;
     height:30px;
+    }
+
+    
+
+    /* LEOTARD */
+    .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: [col] 20vw [col] 20vw [col] 20vw [col] 20vw  ;
+      grid-template-rows: [row] auto [row] auto [row] ;
+      background-color: #fff;
+      color: #444;
+    }
+  
+    .wBox {
+      /* background-color: #444; */
+      color:black;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+    }
+  
+    .aLeo {
+      grid-column: col / span 2;
+      grid-row: row ;
+    }
+
+    /* .aLeo img{
+      max-height: 100%;
+    } */
+    .bLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row ;
+    }
+    .cLeo {
+      grid-column: col / span 2;
+      grid-row: row 2 ;
+    }
+    .dLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 2 ;
+    }
+  
+    .eLeo {
+      grid-column: col / span 2;
+      grid-row: row 3;
+    }
+
+    .fLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 3;
+    }
+
+    .gLeo {
+      grid-column: col / span 2;
+      grid-row: row 4;
+    }
+
+    .hLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 4;
+    }
+
+    .iLeo {
+      grid-column: col / span 2;
+      grid-row: row 5;
+    }
+
+    .jLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 5 / span 2;
+    }
+
+    .kLeo {
+      grid-column: col / span 2 ;
+      grid-row: row 6 ;
+    }
+
+    .lLeo {
+      grid-column: col / span 2;
+      grid-row: row 7 / span 2;
+    }
+
+    .mLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 7;
+    }
+
+    .nLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 8 ;
+    }
+
+    .oLeo {
+      grid-column: col / span 2;
+      grid-row: row 9;
+    }
+
+    .pLeo {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 9;
+    }
+
+
+     /* HAKAMA */
+    .hrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: [col] 25vw [col] 25vw [col] 25vw   ;
+      grid-template-rows: [row] auto [row] auto [row] ;
+      color: #444;
+    }
+  
+    .hBox {
+      color:black;
+      border-radius: 5px;
+    }
+  
+    .H-aLeo {
+      grid-column: col 1;
+      grid-row: row / span 2;
+    }
+
+    /* .aLeo img{
+      max-height: 100%;
+    } */
+    .H-bLeo {
+      grid-column: col 2 ;
+      grid-row: row ;
+    }
+    .H-cLeo {
+      grid-column: col 3;
+      grid-row: row / span 2 ;
+    }
+    .H-eLeo {
+      grid-column: col 2;
+      grid-row: row 2 / span 2 ;
+    }
+    .H-fLeo {
+      grid-column: col 1;
+      grid-row: row 3 / span 2 ;
+    }
+    .H-gLeo {
+      grid-column: col 3;
+      grid-row: row 3 / span 2 ;
+    }
+
+    .H-hLeo {
+      grid-column: col 2;
+      grid-row: row 4 ;
+    }
+
+
+
+
+
+    .H-dLeo {
+      grid-column: col 2 / span 2;
+      grid-row: row  ;
     }

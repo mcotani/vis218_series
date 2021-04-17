@@ -10,18 +10,19 @@
    <script src="anim.js"></script>
    <script src="background.js"></script>
 
-   <body onload="typeWriter(); loop()">
+   <body onload="typeWriter(); loop(); resetBg()">
       
       <div class="writing-container">
          
          <h3 hidden id="demo1" >SILHOUETTES</h3>
-         <h3 id="demo" style="margin-top: -0px"></h3>
-         <input type="button" value="BACKGROUND" onclick="changeDivImage()" />
-         <input type="button" value="AVATAR" onclick="changeAvatar()" />
-         <img id="avatarIm"  height="320px" src="images/home_vogue/feifei_avatar.png" alt="Pro">
+         <h3 id="demo" style="margin-top: -0px; text-align: center;"></h3>
+<div><input class="button" value="BACKGROUND" onclick="changeDivImage()" />
+   <input class="button" value="AVATAR" onclick="changeAvatar()" /></div>
+         
+         <img id="avatarIm" draggable="true" style="cursor: move" height="500px" src="images/home_vogue/feifei_avatar.png" alt="Pro"> 
          <div id="div1">
             
-         </div>
+</div>
          <footer>
             <div class="scrollmenu">
                <a href="yukata.html"  >Kimono</a> 
