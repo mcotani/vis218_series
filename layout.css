@@ -156,8 +156,8 @@ footer a{
 
 .ipad-container{
   width: 65%;
-  height: 50vw;
-  margin-top: 15vw;
+  height: 60vh;
+  margin-top: 15vh;
     border-width: 2px;
     z-index: 1;
     display: block;
@@ -531,11 +531,13 @@ text-align: center;
     /* Yukata */
 .split-row{
   width: 100vw;
+  height: 90vw
+  position: relative;
 }
 
     /* Split the screen in half */
 .split {
-  height: 90%;
+  height: 100%;
   width: 50%;
   position: absolute;
   top: 0;
