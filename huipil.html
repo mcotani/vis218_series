@@ -1,116 +1,106 @@
 <!DOCTYPE html>
 <html>
+  <html>
    <head>
-      <title>Patternmaking: Huipil</title>
+      <title>Patternmaking: Boubou</title>
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <meta charset="utf-8">
       <link rel="stylesheet" href="layout.css">
-   </head>
-   <side-header>
+      <link rel="icon" type="image/png" href="images/home_vogue/feifei_avatar.png"/>
+
+    <style>
+      body {
+        background: #aaa;
+        margin: 0;
+      }
+      #ipad-container {
+        max-width: 1000px;
+        height: 80vh;
+        margin: 10vh auto;
+        margin-top: 5px;
+        position: relative;
+      }
+      #ipad-left,
+      #ipad-right,
+      #ipad-top,
+      #ipad-bottom {
+        position: absolute;
+      }
+      #ipad-left {
+        background: url("images/huipil/monitor_left.png");
+        width: 115px;
+        height: 110%;
+        background-size: 100% 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+      }
+      #ipad-right {
+        background: url("images/huipil/monitor_right.png");
+        width: 115px;
+        height: 110%;
+        background-size: 100% 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+      #ipad-top {
+        background: url("images/huipil/monitor_top.png");
+        width: calc(100% - 230px);
+        height: 100px;
+        background-size: 100% 100%;
+        top: 0;
+        left: 115px;
+        right: 115px;
+      }
+      #ipad-bottom {
+        background: url("images/huipil/monitor_bottom.png");
+        width: calc(100% - 230px);
+        height: 225px;
+        background-size: 100% 100%;
+        bottom: -135px;
+        left: 115px;
+        right: 115px;
+      }
+      iframe {
+        border: 0;
+        width: calc(100% - 232px);
+        height: calc(100% - 84px);
+        margin: 42px 116px;
+        background: white;
+      }
+    </style>
+  </head>
+<side-header style="z-index: 200">
       <a href="index.html"> 
       <img class="image_side" src="images/title_inverted.png" alt="Project title: Silhouettes 2day/tmrw by MC Otani"  ></img>
       </a>
    </side-header>
-   <script src="anim.js"></script>
-   <body onload="typeWriter(); loop()" style="background-image:url('images/huipil/textile_bg.jpeg'); background-repeat: repeat; background-size: 100%;">
-      <div style="z-index: -100" class="ipad-main-container">
-         <img style="z-index: -100" class="monitor-img" src="images/huipil/monitor.png">
-      </div>
-      <div class="ipad-main-container ipad-container">
-         <div class="ipad-column">
-            <h1 hidden id="demo1" style="margin-top: -10px">Huipile</h1>
-            <h1 id="demo" style="margin-top: -10px"></h1>
-            <div style=" width: 40vw; word-wrap: break-word;   word-break: break-all;">
-               <h6>
-                  Originally worn by indigenous women in the MesoAmerican region, the Huipil is a silhouette that dates to before European colonization of the Americas. 
-               </h6>
-            </div>
-            <img  style="max-width:100%" src="images/huipil/oaxaca.jpeg" alt="Kimono pieces cut out template" />
-         </div>
-         <div class="ipad-column">
-            <h6>
-The huipil was worn by classes high and low, both for casual settings and for ceremonial occasions depending on the textiles and trims used. 
-               <img  style="width:300px" src="images/huipil/charles_skinner.jpeg" alt="Kimono pieces cut out template" />
-            </h6>
-             
-            <h6>Painting of Toltec woman in huipil by Charles Skinner, 19th century </h6>
-         </div>
-         <div class="ipad-column">
-        
-            <h6>
-With the colonization of the Americans, European trading routes and new technologies such as the sewing machine introduced new variations to the huipil. The Tehuana port, which was a stopping point between Spanish traders/colonizers bringing goods from the Philippines to Europe, for example, saw the introduction of Phillipino style embroidery onto the traditional huipil.            
-   <img  style="width:300px" src="images/huipil/tehuana.jpeg" alt="Kimono pieces cut out template" />
-            </h6>
-
-            <h6>Tehuana Huipil with Phillipino-style embroidery</h6>
-          
-         </div>
-         <div class="ipad-column">
-        
-            <h6>
-             The sewing machine, which allowed for easy and quick chain-stitching popularized this style as the production modes shifted from hand-made garments to mass produced ones.
-               <img  style="width:300px" src="images/huipil/quetzalli_huipil_cf.jpeg" alt="Kimono pieces cut out template" />
-            </h6>
-            <h6> Quetzalli men's huipil by Carla Fernandez</h6>
-           
-         
-         </div>
-         <div class="ipad-column">
-        
-            <div class="show-on-scroll">
-               <h2 hidden >Fabrication</h2>
-            </div>
-            <h2 class="show-on-scroll-go"></h2>
-                           <img  style="width:300px" src="images/huipil/sketches.jpeg" alt="Kimono pieces cut out template" />
-
-
-            <h6>
-            The huipil is a tunic that consists of three panels of cloth sewn together, forming openings for the arms and a rectangular opening for the head. They usually come in very intricate weaves and are ornamented with embroidery, ribbons, lace, and more. During the Victorian era, transparent huipiles and form-fitting wrap skirts were completely replaced by muslin huipiles and skirts with petticoats.
-</h6>         
-         </div>
-          <div class="ipad-column">
-            <img style="max-width: 100%; max-height: 100%" src="images/huipil/guatemalan.jpg" alt="Kimono pieces cut out template" />
-            <h6>Guatemalan huipil</h6>
-         </div>
-         <div class="ipad-column">
-            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-               <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-               <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                  <figure>
-                  <a data-fancybox="images" href="images/huipil/oaxacan.jpeg">
-                  <img class="img-fluid" src="images/huipil/oaxacan.jpeg">
-                  </a>
-                  <figcaption> Oaxacan huipil</figcaption>
-               </figure>
-         </div>
-         <div class="ipad-column" >
-            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-               <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-               <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                  <figure>
-                  <a data-fancybox="images" href="images/huipil/carla_fernandez.jpeg">
-                  <img class="img-fluid" src="images/huipil/carla_fernandez.jpeg" alt="Wafrica Kimono 1">
-                  </a>
-                  <figcaption>Huipil by Carla Fernandez</figcaption>
-               </figure>
-         </div>
-          
-        
-      </div>
-      <footer>
+  <body style="background-image:url('images/huipil/textile_bg.jpeg'); background-repeat: repeat; background-size: 100%;">
+    <div id="ipad-container">
+      <div id="ipad-left"></div>
+      <div id="ipad-right"></div>
+      <div id="ipad-top"></div>
+      <div id="ipad-bottom"></div>
+      <iframe src="huipil_internal.html"></iframe>
+    </div>
+ <footer>
          <div class="scrollmenu">
             <a href="yukata.html"  >Kimono</a> 
             <a href="choli.html">Choli</a> 
             <a  href="cheongsam.html">Cheongsam</a> 
             <a href="mukhina1.html">Mukhina</a> 
             <a class="current" href="huipil.html">Huipil</a> 
-            <a href="boubou.html">Boubou</a> 
+            <a  href="boubou.html">Boubou</a> 
             <a href="leotard.html">Leotard</a> 
             <a href="hakama.html">Hakama</a> 
+            <a href="gathering.html"> Gathering </a>
             <a href="about.html">About</a> 
             <a href="index.html">Home</a> 
          </div>
       </footer>
-      </div>
-   </body>
+    <script>
+      /* JS goes here */
+    </script>
+  </body>
 </html>

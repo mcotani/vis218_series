@@ -5,24 +5,20 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <meta charset="utf-8">
       <link rel="stylesheet" href="layout.css">
+      <link rel="icon" type="image/png" href="images/home_vogue/feifei_avatar.png"/>
+
    </head>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="anim.js"></script>
    <script src="background.js"></script>
 
-   <body onload="typeWriter(); loop(); resetBg()">
-      
-      <div class="writing-container">
-         
+   <body onload="typeWriter(); loop(); resetBg()" style="text-align: center">
          <h3 hidden id="demo1" >SILHOUETTES</h3>
-         <h3 id="demo" style="margin-top: -0px; text-align: center;"></h3>
-<div><input class="button" value="BACKGROUND" onclick="changeDivImage()" />
-   <input class="button" value="AVATAR" onclick="changeAvatar()" /></div>
-         
+         <h3 id="demo"></h3>
+<div style="margin-top: -6%"><button class="button" value="BACKGROUND" onclick="changeDivImage()" />
+   <button class="button" value="AVATAR" onclick="changeAvatar()" /></div>
          <img id="avatarIm" draggable="true" style="cursor: move" height="500px" src="images/home_vogue/feifei_avatar.png" alt="Pro"> 
-         <div id="div1">
-            
-</div>
+         
          <footer>
             <div class="scrollmenu">
                <a href="yukata.html"  >Kimono</a> 
@@ -33,10 +29,11 @@
                <a href="boubou.html">Boubou</a> 
                <a href="leotard.html">Leotard</a> 
                <a href="hakama.html">Hakama</a> 
+               <a href="gathering.html"> Gathering </a>
+
                <a href="about.html">About</a> 
                <a class="current" href="index.html">Home</a> 
             </div>
          </footer>
-      </div>
    </body>
 </html>
