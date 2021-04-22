@@ -6,7 +6,7 @@ function changeDivImage()
         var imgPath = new String();
         imgPath = document.body.style.backgroundImage;
         console.log(imgPath);
-        var bgs = [ "url(images/home_vogue/marble_bg.png)", "url(images/home_vogue/yellow_bg.png)",  "url(images/home_vogue/flowers.jpeg)", "url(images/home_vogue/firework1.gif)", "url(images/home_vogue/gradient.jpeg)",  "url(images/home_vogue/grass.jpeg)"];
+        var bgs = [ "url(images/home_vogue/marble.png)", "url(images/home_vogue/yellow_bg.png)",  "url(images/home_vogue/flowers.jpeg)", "url(images/home_vogue/firework1.gif)", "url(images/home_vogue/gradient.jpeg)",  "url(images/home_vogue/grass.jpeg)"];
        
         // retrieve data value
         var currentItem = new Number;
