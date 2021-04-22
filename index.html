@@ -6,9 +6,21 @@
       <meta charset="utf-8">
       <link rel="stylesheet" href="layout.css">
       <link rel="icon" type="image/png" href="images/home_vogue/feifei_avatar.png"/>
-
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="/resources/demos/style.css">
+      
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+         $( function() {
+            $( "#draggable" ).draggable();
+            $( "#draggable2" ).draggable();
+            $( "#draggable3" ).draggable();
+            $( "#draggable4" ).draggable();
+            $( "#draggable5" ).draggable();
+            } );
+      </script>
    </head>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="anim.js"></script>
    <script src="background.js"></script>
 
@@ -17,8 +29,21 @@
          <h3 id="demo"></h3>
 <div style="margin-top: -6%"><button class="button" value="BACKGROUND" onclick="changeDivImage()" />
    <button class="button" value="AVATAR" onclick="changeAvatar()" /></div>
-         <img id="avatarIm" draggable="true" style="cursor: move" height="500px" src="images/home_vogue/feifei_avatar.png" alt="Pro"> 
-         
+   <div class="ui-widget-content" id="draggable" style="text-align: center">
+         <img id="avatarIm" style="cursor: move" height="500px" src="images/home_vogue/feifei_avatar.png" alt="Pro"> 
+         </div>
+         <div class="ui-widget-content" id="draggable2" style="text-align: left">
+         <img style="cursor: move" height="200px" src="images/home_vogue/leotard_front.png" alt="Pro"> 
+         </div>
+         <div class="ui-widget-content" id="draggable3" style="text-align: left">
+         <img style="cursor: move" height="200px" src="images/home_vogue/leotard_back.png" alt="Pro"> 
+         </div>
+         <div class="ui-widget-content" id="draggable4" style="text-align: left">
+         <img style="cursor: move" height="150px" src="images/home_vogue/sleeve.png" alt="Pro"> 
+         </div>
+         <div class="ui-widget-content" id="draggable5" style="text-align: left">
+         <img style="cursor: move" height="150px" src="images/home_vogue/sleeve.png" alt="Pro"> 
+         </div>
          <footer>
             <div class="scrollmenu">
                <a href="yukata.html"  >Kimono</a> 

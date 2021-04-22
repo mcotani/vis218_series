@@ -572,3 +572,5 @@ text-align: center;
   color: white;
   background-color: black;
 }
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
