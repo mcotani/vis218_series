@@ -17,45 +17,45 @@
             $( "#draggable3" ).draggable();
             $( "#draggable4" ).draggable();
             $( "#draggable5" ).draggable();
+             $( "#draggable_title" ).draggable();
+              $( "#draggable_subtitle" ).draggable();
             } );
       </script>
    </head>
    <script src="anim.js"></script>
    <script src="background.js"></script>
    <body onload="typeWriter(); loop(); resetBg()" style="text-align: center; margin-top: -10vh;  ">
-   <br>
-<br>
+      <br>
+      <br>
       <div id="magazine" class="magazine-div" style="background-image:url('images/home_vogue/yellow_bg.png');  background-repeat: no-repeat; background-size: cover;">
-      <h3 hidden id="demo1"  >SILHOUETTES</h3>
-      <h3 id="demo" style="font-size: 5vmin;"></h3>
-
-      <div style="text-align: center; align-items: center" >
-      <div class="ui-widget-content" id="draggable">
-         <img id="avatarIm" style="cursor: move" height="500px" src="images/home_vogue/feifei_avatar.png" alt="Pro"> 
+         <div class="ui-widget-content" id="draggable_title" style="text-align: center;  display: block; position: absolute">
+            <h3 hidden id="demo1"  >SILHOUETTES</h3>
+            <h3 id="demo" style="font-size: 5.5vmin;cursor: move;"></h3>
+         </div>
+         <div class="ui-widget-content" id="draggable_subtitle" style="text-align: center;  display: block; position: absolute">
+            <h2 style="font-size: 2vmin;cursor: move"> 2day/tmrw</h2>
+         </div>
+         <div style="text-align: center; align-items: center" >
+            <div class="ui-widget-content" id="draggable">
+               <img id="avatarIm" style="cursor: move" height="550px" src="images/home_vogue/feifei_avatar.png" alt="Pro"> 
+            </div>
+            <div class="ui-widget-content" id="draggable2" style="text-align: center;  display: block; position: absolute">
+               <img style="cursor: move" height="220px" src="images/home_vogue/leotard_front.png" alt="Pro"> 
+            </div>
+            <div class="ui-widget-content" id="draggable3" style=" display: block; position: absolute">
+               <img style="cursor: move" height="220px" src="images/home_vogue/leotard_back.png" alt="Pro"> 
+            </div>
+            <div class="ui-widget-content" id="draggable4" style=" display: block; position: absolute">
+               <img style="cursor: move" height="165px" src="images/home_vogue/sleeve.png" alt="Pro"> 
+            </div>
+            <div class="ui-widget-content" id="draggable5" style=" display: block; position: absolute">
+               <img style="cursor: move" height="165px" src="images/home_vogue/sleeve.png" alt="Pro"> 
+            </div>
+         </div>
       </div>
-      <div class="ui-widget-content" id="draggable2" style="text-align: center;  display: block; position: absolute">
-         <img style="cursor: move" height="200px" src="images/home_vogue/leotard_front.png" alt="Pro"> 
-      </div>
-      <div class="ui-widget-content" id="draggable3" style=" display: block; position: absolute">
-         <img style="cursor: move" height="200px" src="images/home_vogue/leotard_back.png" alt="Pro"> 
-      </div>
-      <div class="ui-widget-content" id="draggable4" style=" display: block; position: absolute">
-         <img style="cursor: move" height="150px" src="images/home_vogue/sleeve.png" alt="Pro"> 
-      </div>
-      <div class="ui-widget-content" id="draggable5" style=" display: block; position: absolute">
-         <img style="cursor: move" height="150px" src="images/home_vogue/sleeve.png" alt="Pro"> 
-      </div>
-      <div style="bottom: 0; position: absolute; text-align: center ">      
-      <h2  id="demo" style="font-size: 1vmin;">BY MC OTANI</h2>
-</div>
-
-      </div>
-
-      </div>
-      
-       <div style="z-index: 10;" >
-       <button class="button" style="left:0" value="BACKGROUND" onclick="changeDivBG()" />
-      <button class="button" value="AVATAR" onclick="changeAvatar()" />
+      <div style="z-index: 10;" >
+         <button class="button" style="left:0" value="BACKGROUND" onclick="changeDivBG()" />
+         <button class="button" value="AVATAR" onclick="changeAvatar()" />
       </div>
       <footer>
          <div class="scrollmenu">

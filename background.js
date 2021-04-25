@@ -55,13 +55,13 @@ function changeDivBG()
     var imgPath = new String();
     imgPath = document.getElementById("magazine").style.backgroundImage;
     console.log(imgPath);
-    var bgs = [ "url(images/home_vogue/brocade7.jpeg)", "url(images/home_vogue/yellow_bg.png)",  "url(images/home_vogue/flowers.jpeg)", "url(images/home_vogue/firework1.gif)", "url(images/home_vogue/gradient.jpeg)",  "url(images/home_vogue/grass.jpeg)"];
+    var bgs = [ "url(images/home_vogue/glitch.gif)", "url(images/home_vogue/hologram.jpeg)",  "url(images/home_vogue/flowers.jpeg)", "url(images/home_vogue/thumb.png)", "url(images/home_vogue/gradient.jpeg)",  "url(images/home_vogue/grass.jpeg)", "url(images/home_vogue/marble_bg.png)", "url(images/home_vogue/pink_bg.png)", "url(images/home_vogue/blue_bg.png)","url(images/home_vogue/yellow_bg.png)"];
    
     // retrieve data value
     var currentItem = new Number;
     currentItem = localStorage.getItem("currentMag");
     console.log(currentItem)
-    if (currentItem == null || currentItem ==7){
+    if (currentItem == null || currentItem ==10){
         console.log("set first")
         localStorage.setItem("currentMag", 0);
         currentItem = 0;

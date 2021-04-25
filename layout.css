@@ -140,6 +140,18 @@ footer a{
   border: 0px;
 }
 
+.writing-container a:visited {
+  color: lawngreen;
+  background-color: transparent;
+  text-decoration: none;
+} 
+
+.writing-container a:link {
+  color: lawngreen;
+  background-color: transparent;
+  /* text-decoration: none; */
+}
+
 .ipad-container{
     border-width: 2px;
     z-index: 1;
@@ -152,6 +164,17 @@ footer a{
     align-items: center;
     overflow: scroll;
     white-space: nowrap;
+}
+.ipad-container a:visited {
+  color: lawngreen;
+  background-color: transparent;
+  text-decoration: none;
+} 
+
+.ipad-container a:link {
+  color: lawngreen;
+  background-color: transparent;
+  /* text-decoration: none; */
 }
 
 
@@ -507,6 +530,18 @@ footer a{
   position: relative;
 }
 
+.split-row a:visited {
+  color: lawngreen;
+  background-color: transparent;
+  text-decoration: none;
+} 
+
+.split-row a:link {
+  color: lawngreen;
+  background-color: transparent;
+  /* text-decoration: none; */
+}
+
     /* Split the screen in half */
 .split {
   height: 100%;
@@ -591,5 +626,8 @@ footer a{
   margin: 10vh auto;
   position: relative;
   padding: 0.1px;
+  /* border-style: solid; */
+  /* border-color: lawngreen; */
 
 }
+
