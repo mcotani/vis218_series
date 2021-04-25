@@ -8,7 +8,6 @@
       <link rel="icon" type="image/png" href="images/home_vogue/feifei_avatar.png"/>
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="/resources/demos/style.css">
-      
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
@@ -23,42 +22,55 @@
    </head>
    <script src="anim.js"></script>
    <script src="background.js"></script>
+   <body onload="typeWriter(); loop(); resetBg()" style="text-align: center; margin-top: -10vh;  ">
+   <br>
+<br>
+      <div id="magazine" class="magazine-div" style="background-image:url('images/home_vogue/yellow_bg.png');  background-repeat: no-repeat; background-size: cover;">
+      <h3 hidden id="demo1"  >SILHOUETTES</h3>
+      <h3 id="demo" style="font-size: 5vmin;"></h3>
 
-   <body onload="typeWriter(); loop(); resetBg()" style="text-align: center; margin-top: -10vh;  background-repeat: no-repeat; background-size: cover; ">
-         <h3 hidden id="demo1" >SILHOUETTES</h3>
-         <h3 id="demo"></h3>
-<div style="margin-top: -6%"><button class="button" value="BACKGROUND" onclick="changeDivImage()" />
-   <button class="button" value="AVATAR" onclick="changeAvatar()" /></div>
-   <div class="ui-widget-content" id="draggable" style="text-align: center">
+      <div style="text-align: center; align-items: center" >
+      <div class="ui-widget-content" id="draggable">
          <img id="avatarIm" style="cursor: move" height="500px" src="images/home_vogue/feifei_avatar.png" alt="Pro"> 
-         </div>
-         <div class="ui-widget-content" id="draggable2" style="text-align: left">
+      </div>
+      <div class="ui-widget-content" id="draggable2" style="text-align: center;  display: block; position: absolute">
          <img style="cursor: move" height="200px" src="images/home_vogue/leotard_front.png" alt="Pro"> 
-         </div>
-         <div class="ui-widget-content" id="draggable3" style="text-align: left">
+      </div>
+      <div class="ui-widget-content" id="draggable3" style=" display: block; position: absolute">
          <img style="cursor: move" height="200px" src="images/home_vogue/leotard_back.png" alt="Pro"> 
-         </div>
-         <div class="ui-widget-content" id="draggable4" style="text-align: left">
+      </div>
+      <div class="ui-widget-content" id="draggable4" style=" display: block; position: absolute">
          <img style="cursor: move" height="150px" src="images/home_vogue/sleeve.png" alt="Pro"> 
-         </div>
-         <div class="ui-widget-content" id="draggable5" style="text-align: left">
+      </div>
+      <div class="ui-widget-content" id="draggable5" style=" display: block; position: absolute">
          <img style="cursor: move" height="150px" src="images/home_vogue/sleeve.png" alt="Pro"> 
-         </div>
-         <footer>
-            <div class="scrollmenu">
-               <a href="yukata.html"  >Kimono</a> 
-               <a href="choli.html">Choli</a> 
-               <a href="cheongsam.html">Cheongsam</a> 
-               <a href="mukhina1.html">Mukhina</a> 
-               <a href="huipil.html">Huipil</a> 
-               <a href="boubou.html">Boubou</a> 
-               <a href="leotard.html">Leotard</a> 
-               <a href="hakama.html">Hakama</a> 
-               <a href="gathering.html"> Gathering </a>
+      </div>
+      <div style="bottom: 0; position: absolute; text-align: center ">      
+      <h2  id="demo" style="font-size: 1vmin;">BY MC OTANI</h2>
+</div>
 
-               <a href="about.html">About</a> 
-               <a class="current" href="index.html">Home</a> 
-            </div>
-         </footer>
+      </div>
+
+      </div>
+      
+       <div style="z-index: 10;" >
+       <button class="button" style="left:0" value="BACKGROUND" onclick="changeDivBG()" />
+      <button class="button" value="AVATAR" onclick="changeAvatar()" />
+      </div>
+      <footer>
+         <div class="scrollmenu">
+            <a class="current"  href="index.html">Home</a> 
+            <a  href="yukata.html"  >Kimono</a> 
+            <a  href="cheongsam.html">Cheongsam</a> 
+            <a  href="hakama.html">Hakama</a> 
+            <a href="mukhina1.html">Mukhina</a> 
+            <a  href="huipil.html">Huipil</a> 
+            <a  href="choli.html">Choli</a> 
+            <a  href="leotard.html">Leotard</a> 
+            <a href="boubou.html">Boubou</a> 
+            <a  href="gathering.html"> Gathering </a>
+            <a  href="about.html">About</a> 
+         </div>
+      </footer>
    </body>
 </html>

@@ -157,29 +157,26 @@ footer a{
 
 .ipad-column{
   display: inline-block;
-  max-width: 40%;
+  max-width: 55%;
   max-height: 70%;
   white-space: normal;
   padding: 2%;
-  text-align: top;
   left: 0;
   right: 0;
-  top: 0;
-  
+  vertical-align:middle;
+  text-align: center;
 }
 
 
-.monitor-img{
-  margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
-  align-items: center;
-  z-index: -3;
-  width: 55vw;
-  position:absolute
+.ipad-column h6{
+  margin-bottom: 10px;
 }
+
+.ipad-column h2{
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
 
 .scrollblock{
     background-color: deeppink;
@@ -309,12 +306,18 @@ text-align: center;
   background-color: deeppink; /* Green */
   border: none;
   color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 13px;
+  /* padding: 10px 20px; */
+  /* text-align: left; */
+  /* text-decoration: none; */
+  /* display: block; */
+  top: 0;
+  position: absolute;
+  right: 0;
+  /* font-size: 13px; */
+  height:30px;
+  width:30px;
 }
+
 .button:hover{
   background-color: lawngreen; /* Green */
   color: white
@@ -573,4 +576,20 @@ text-align: center;
   background-color: black;
 }
 
-#draggable { width: 150px; height: 150px; padding: 0.5em; }
+#draggable { 
+  width: 150px; 
+  height: 150px;
+   padding: 0.5em;
+   text-align: center; }
+
+
+.magazine-div{
+  width: 500px;
+  height: 650px;
+  /* background-color: blue;  */
+  text-align: center;
+  margin: 10vh auto;
+  position: relative;
+  padding: 0.1px;
+
+}
